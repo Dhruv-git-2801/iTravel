@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>iTravel - Travelling Made Easy</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " style="position: sticky; top: 0; z-index: 1;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">iTravel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Affordable Tickets</a></li>
+                            <li><a class="dropdown-item" href="#">Our travel places</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact
+                            Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search for places..."
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact-Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">We'ld love to listen</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Elaborate your message....</label>
+                            <textarea class="form-control" placeholder="Leave a comment here..." id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CAROUSEL -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/2300x1000/?nature" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Travel To Exciting Places</h1>
+                    <p>We'll take you to places that you will enjoy alot</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/2300x1000/?landscape" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Adventurous Journey</h1>
+                    <p>Capture beautiful memories by travelling with us</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/2300x1000/?mountains" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Lots Of Excitement</h1>
+                    <p>Make your Journey full of excitement and memorable</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- SECTION OF 3-ITEMS IN A ROW -->
+    <div class="container my-4" style="text-align: center;">
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    src="https://source.unsplash.com/1500x1000/?nature" alt="">
+                <h2>Nature</h2>
+                <p>We'll take you close to the nature so that you can get connected to it and can explore the exciting
+                    places nature has to offer.</p>
+                <p><a class="btn btn-primary" href="#">Know Nature </a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    src="https://source.unsplash.com/1500x1000/?beach" alt="">
+                <h2>Beaches</h2>
+                <p>Let's go!! It's a sunny day and grab the opportunity of these sunny days by visiting to the beach
+                    enjoying the scenario at the beach.</p>
+                <p><a class="btn btn-primary" href="#">Explore Beaches</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    src="https://source.unsplash.com/1500x1000/?mountain" alt="">
+                <h2>Mountains</h2>
+                <p>You need to have high adrenalie to go there!! What? You have? Then what are waiting for. Join us and
+                    let's talk with the clouds.</p>
+                <p><a class="btn btn-primary" href="#">Ready For Adventure</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div>
+    </div>
+
+    <!-- 3rd Section - Single photo -->
+    <div id="About" class="px-4 py-5 my-5 text-center" style="background-color: #f1efef;">
+        <img class="d-block mx-auto mb-4 img-fluid" src="https://source.unsplash.com/950x400/?landscape" alt="">
+        <h1 class="display-5 fw-bold">Experience the joy of travelling with us</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">We have great destinations in our bucket for you. Our tourist guide are eagerly
+                awaiting you to join you all. We are willing to explore the different places with you. There are places
+                there are perfect for a family visit and also we have some great destinations for couples.</p>
+        </div>
+    </div>
+
+    <!-- Album -->
+    <div id="Destiantions" class="container-fluid">
+        <h1 class="display-5 fw-bold text-center my-4   ">Out Destinations</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="./pics/pic1.jpg" alt="" srcset="">
+                    </svg>
+
+                    <div class="card-body">
+                        <p class="card-text">Visit this beautiful place where you can get a combination of fresh air and
+                            pleasant environment to get relaxed from your daily routine.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Explore</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="./pics/pic2.jpg" alt="" srcset="">
+                    </svg>
+
+                    <div class="card-body">
+                        <p class="card-text">Lakes are always interesting. You will find this surrounded by trees in a
+                            forest. It's always best to visit it atleast once.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Explore</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="./pics/pic3.jpg" alt="" srcset="">
+                    </svg>
+
+                    <div class="card-body">
+                        <p class="card-text">Talk with the clouds and witness the amazing view from the top. A place
+                            worth visiting with your friends especially when you are in your college
+                            days.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Explore</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="./pics/pic4.jpg" alt="" srcset="">
+                    </svg>
+
+                    <div class="card-body">
+                        <p class="card-text">Magical place and created by the nature itself and a fortunate one the
+                            person who visit this place.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Explore</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="./pics/pic5.jpg" alt="" srcset="">
+                    </svg>
+
+                    <div class="card-body">
+                        <p class="card-text">Beaches are always fun and relaxing. It's fascinating to talk with the
+                            pleasant air of the beach.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Explore</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="./pics/pic6.jpg" alt="" srcset="">
+                    </svg>
+
+                    <div class="card-body">
+                        <p class="card-text">A city where each and every individual crave for to visit. Jaipur, the pink
+                            city of India. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Explore</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="b-example-divider"></div>
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="  py-4    my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                <li class="nav-item"><a href="#Destiantions" class="nav-link px-2 text-muted">Destinations</a></li>
+                <li class="nav-item"><a href="#About" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 iTravel Inc, All Rights Reserved</p>
+            <p class="text-center text-muted">Developed By Dhruv Patel</p>
+        </footer>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
